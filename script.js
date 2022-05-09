@@ -15,8 +15,6 @@ let keyboard = document.createElement('div');
 keyboard.classList.add('keyboard');
 block.append(keyboard);
 
-
-
 let descr = document.createElement('div');
 descr.classList.add('descr');
 descr.innerHTML = "Клавиатура создана в Mac OS, переключение языка не реализовано";
@@ -33,7 +31,7 @@ function CreateBtn(){
     }
     let btns = keyboard.querySelectorAll('div');
         btns.forEach(element => element.classList.add('k-key'));
-        btns.forEach((el, i) => el.innerHTML=`${Allbtn[i]}`)
+        btns.forEach((el, i) => el.innerHTML=`${Allbtn[i]}`);
 }
 CreateBtn();
 
